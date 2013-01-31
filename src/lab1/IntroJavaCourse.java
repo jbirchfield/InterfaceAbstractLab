@@ -3,11 +3,11 @@ package lab1;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      Jim Birchfield
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
+public class IntroJavaCourse extends ComputerClasses {
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
@@ -29,7 +29,6 @@ public class IntroJavaCourse {
         return credits;
     }
 
-
     public String getPrerequisites() {
         return prerequisites;
     }
@@ -46,5 +45,11 @@ public class IntroJavaCourse {
         }
         this.setCredits(credits);
     }
+    public String getCourseName() {
+        return courseName;
+    }
 
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
 }

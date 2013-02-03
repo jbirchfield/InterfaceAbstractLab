@@ -15,16 +15,16 @@ public class IntroToProgrammingCourse extends ComputerClasses {
     private double credits;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
     }
 
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
+                    "Error: courseName cannot be null or empty string");
             System.exit(0);
-        }
+            }
         this.courseName = courseName;
     }
     
@@ -45,9 +45,4 @@ public class IntroToProgrammingCourse extends ComputerClasses {
         }
         this.credits = credits;
     }
-
-    
-    
-
-    
 }

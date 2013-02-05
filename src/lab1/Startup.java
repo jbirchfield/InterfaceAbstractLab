@@ -13,14 +13,14 @@ public class Startup {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       ComputerClasses class1 = new IntroJavaCourse("Java 2","2345");
+       AdvancedJavaCourse class1 = new AdvancedJavaCourse("Java 2","2345");
        class1.setCredits(3.5);
-//       class1.setPrerequisites("Basic Java");
+       class1.setPrerequisites("Basic Java");
        
        System.out.println(class1.getCourseName() + 
                           class1.getCourseNumber() +
-                          class1.getCredits());  
- //                         class1.getPrerequisites());
+                          class1.getCredits() +  
+                          class1.getPrerequisites());
     }
 }
 

@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  * @author      Jim Birchfield
  * @version     1.00
  */
-public class IntroToProgrammingCourse extends ComputerClasses {
+public class IntroToProgrammingCourse extends ProgrammingCourses {
     private String courseName;
     private String courseNumber;
     private double credits;

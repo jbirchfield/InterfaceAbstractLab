@@ -8,7 +8,7 @@
  */
 package lab1;
 
-public abstract class ComputerClasses {
+public abstract class ProgrammingCourses {
     
     private String courseName;
     private String courseNumber;

@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      Jim Birchfield
  * @version     1.00
  */
-public class AdvancedJavaCourse extends ComputerClasses {
+public class AdvancedJavaCourse extends ProgrammingCourses {
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -33,7 +33,8 @@ public class AdvancedJavaCourse extends ComputerClasses {
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        this.credits = credits;
+        else
+            this.credits = credits;
     }
     
     public void setPrerequisites(String prerequisites) {

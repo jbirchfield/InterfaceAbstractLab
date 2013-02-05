@@ -3,18 +3,18 @@ package lab2;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      Jim Birchfield
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
+public class IntroJavaCourse implements ProgrammingCourses {
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
     public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
     }
 
     public String getCourseNumber() {
@@ -23,6 +23,10 @@ public class IntroJavaCourse {
 
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
+    }
+    
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
     }
 
     public double getCredits() {

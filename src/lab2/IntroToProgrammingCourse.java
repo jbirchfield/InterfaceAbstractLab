@@ -5,10 +5,10 @@ import javax.swing.JOptionPane;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      Jim Birchfield
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse implements ProgrammingCourses {
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -22,7 +22,7 @@ public class IntroToProgrammingCourse {
         return courseNumber;
     }
 
-    public final void setCourseNumber(String courseNumber) {
+    public void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null of empty string");
@@ -48,7 +48,7 @@ public class IntroToProgrammingCourse {
         return courseName;
     }
 
-    public final void setCourseName(String courseName) {
+    public void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");

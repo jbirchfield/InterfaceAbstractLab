@@ -20,6 +20,10 @@ public class IntroJavaCourse implements ProgrammingCourses {
     public String getCourseNumber() {
         return courseNumber;
     }
+    
+    public String getCourseName() {
+        return courseName;
+    }
 
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
